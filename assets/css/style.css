@@ -54,9 +54,7 @@ body{
 }
 
 .site-brand{
-    color: #fff;
-    font-weight: 400;
-    font-style: italic;
+    width: 230px;
 }
 
 .main-sidebar{

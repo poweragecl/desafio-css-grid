@@ -8,72 +8,116 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Desafio CSS Grid</title>
+    <title>🪴 Desafio CSS Grid</title>
 </head>
 <body>
     
 <div class="page">
     <div class="main-grid-container">
         <header class="main-header">
-            <h1>Mi ecommerce</h1>
+            <h1 class="site-brand">Flora Frontera 🪴</h1>
+            <div class="utilites">
+                <a href="#" class="my-account"><i class="fa-solid fa-user"></i></a>
+                <a href="#" class="my-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
         </header>
 
         <aside class="main-sidebar">
-            <h2>Categorías</h2>
+
+            <h2 class="sidebar-title">Buscar</h2>
+            <input type="search" class="search-bar" placeholder="Estoy buscando...">
+
+            <h2 class="sidebar-title">Filtra por Categorías</h2>            
             <ul class="filter">
-                <li class="category-filter active">Perfumes <span class="quantity">13</span></li>
-                <li class="category-filter">Ropa <span class="quantity">21</span></li>
-                <li class="category-filter">Accesorios <span class="quantity">41</span></li>
-                <li class="category-filter">Zapatos <span class="quantity">10</span></li>    
+                <li class="category-filter active"><a href="#" class="filter-link">Suculentas <span class="quantity">(6)</span></a></li>
+                <li class="category-filter"><a href="#" class="filter-link">Cactus <span class="quantity">(21)</span></a></li>
+                <li class="category-filter"><a href="#" class="filter-link">Plantas interior con flor <span class="quantity">(41)</span></a></li>
+                <li class="category-filter"><a href="#" class="filter-link">Plantas hoja perenne <span class="quantity">(10)</span></a></li>    
             </ul>
+
+            <h2 class="sidebar-title">Filtra por Estilo</h2>            
+            <ul class="filter">
+                <li class="category-filter"><a href="#" class="filter-link">Tropicales <span class="quantity">(15)</span></a></li>
+                <li class="category-filter"><a href="#" class="filter-link">Mediterráneo <span class="quantity">(4)</span></a></li>
+                <li class="category-filter"><a href="#" class="filter-link">Bohemio <span class="quantity">(10)</span></a></li>
+                <li class="category-filter"><a href="#" class="filter-link">Minimalista <span class="quantity">(25)</span></a></li>    
+            </ul>
+
         </aside>
 
         <main class="product-area">
+
+            <div class="product-subfilter">
+
+                <div class="showing-results">
+                    Mostrando todos los resultados: 6 productos
+                </div>
+
+                <div class="sort-by">
+                    <select class="sort-dropdown">
+                        <option value="popular">Más Popular</option>
+                        <option value="recientes">Recientes</option>
+                        <option value="mayor precio">Precio de mayor a menor</option> 
+                        <option value="menor precio">Precio de menor a mayor</option>                       
+                    </select>
+                </div>
+                
+            </div>
+
             <div class="products-grid-container">
                 <article class="product">
-                    <img src="https://www.lapolar.cl/dw/image/v2/BCPP_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8894f1d8/images/large/4CC477202-negro.jpg" alt="" class="product-image">
-                    <h3 class="product-title">Product title</h3>
-                    <h4 class="product-price">$9999</h4>
+                    <img src="assets/img/suculenta_01.png" alt="" class="product-image">
+                    <h3 class="product-title">Reina de la arena</h3>
+                    <h4 class="product-price">$3.590 CLP</h4>
                     <a href="#" class="product-btn">Comprar</a>
                 </article>
 
                 <article class="product">
-                    <img src="https://www.lapolar.cl/dw/image/v2/BCPP_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8894f1d8/images/large/4CC477202-negro.jpg" alt="" class="product-image">
-                    <h3 class="product-title">Product title</h3>
-                    <h4 class="product-price">$9999</h4>
+                    <img src="assets/img/suculenta_02.png" alt="" class="product-image">
+                    <h3 class="product-title">Jardín de cristal</h3>
+                    <h4 class="product-price">$3.290 CLP</h4>
                     <a href="#" class="product-btn">Comprar</a>
                 </article>
 
                 <article class="product">
-                    <img src="https://www.lapolar.cl/dw/image/v2/BCPP_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8894f1d8/images/large/4CC477202-negro.jpg" alt="" class="product-image">
-                    <h3 class="product-title">Product title</h3>
-                    <h4 class="product-price">$9999</h4>
+                    <img src="assets/img/suculenta_03.png" alt="" class="product-image">
+                    <h3 class="product-title">Oasis</h3>
+                    <h4 class="product-price">$3.590 CLP</h4>
                     <a href="#" class="product-btn">Comprar</a>
                 </article>
 
                 <article class="product">
-                    <img src="https://www.lapolar.cl/dw/image/v2/BCPP_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8894f1d8/images/large/4CC477202-negro.jpg" alt="" class="product-image">
-                    <h3 class="product-title">Product title</h3>
-                    <h4 class="product-price">$9999</h4>
+                    <img src="assets/img/suculenta_04.png" alt="" class="product-image">
+                    <h3 class="product-title">Espejo de agua</h3>
+                    <h4 class="product-price">$2.790 CLP</h4>
                     <a href="#" class="product-btn">Comprar</a>
                 </article>
 
                 <article class="product">
-                    <img src="https://www.lapolar.cl/dw/image/v2/BCPP_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8894f1d8/images/large/4CC477202-negro.jpg" alt="" class="product-image">
-                    <h3 class="product-title">Product title</h3>
-                    <h4 class="product-price">$9999</h4>
+                    <img src="assets/img/suculenta_05.png" alt="" class="product-image">
+                    <h3 class="product-title">Cactus de jade</h3>
+                    <h4 class="product-price">$2.990 CLP</h4>
                     <a href="#" class="product-btn">Comprar</a>
                 </article>
-                
+
+                <article class="product">
+                    <img src="assets/img/suculenta_06.png" alt="" class="product-image">
+                    <h3 class="product-title">Ojo de dragón</h3>
+                    <h4 class="product-price">$3.190 CLP</h4>
+                    <a href="#" class="product-btn">Comprar</a>
+                </article>
+
             </div>
         </main>
         
         <footer class="colophon">
-            <p>@miecommerce</p>
+            <p>&copy; 2022 Flora Frontera. Todos los derechos reservados.</p>
         </footer>
 
     </div>
 </div>
+
+<script src="https://kit.fontawesome.com/db59a2caec.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -24,6 +24,7 @@ body{
     'header header header header'
     'sidebar products-grid products-grid products-grid'
     'footer footer footer footer';
+    grid-template-columns: 25% 1fr 1fr;
 }
 
 .main-header{
